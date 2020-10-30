@@ -5,7 +5,7 @@ theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
-publishDir = "../username.github.io"
+publishDir = "../dcbm.github.io"
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
