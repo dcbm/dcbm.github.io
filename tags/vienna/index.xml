@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science and Stuff</title>
-    <link>/</link>
-    <description>Recent content on Data Science and Stuff</description>
+    <title>vienna on Data Science and Stuff</title>
+    <link>/tags/vienna/</link>
+    <description>Recent content in vienna on Data Science and Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/vienna/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sighs-vienna</title>
       <link>/2020/11/13/sighs-vienna/</link>
@@ -14,15 +14,6 @@
       
       <guid>/2020/11/13/sighs-vienna/</guid>
       <description>library(magrittr)read.csv(&amp;quot;https://data.wien.gv.at/daten/geo?service=WFS&amp;amp;request=GetFeature&amp;amp;version=1.1.0&amp;amp;typeName=ogdwien:SEHENSWUERDIGOGD&amp;amp;srsName=EPSG:4326&amp;amp;outputFormat=csv&amp;quot;) %&amp;gt;% dplyr::mutate(COORDS = stringr::str_remove(SHAPE, &amp;quot;POINT &amp;quot;),COORDS = stringr::str_remove(COORDS, &amp;quot;\\(&amp;quot;),COORDS = stringr::str_remove(COORDS, &amp;quot;\\)&amp;quot;),X = (stringr::str_split(COORDS, &amp;quot; &amp;quot;) %&amp;gt;% purrr::transpose())[[1]] %&amp;gt;% unlist() %&amp;gt;% as.numeric(),Y = (stringr::str_split(COORDS, &amp;quot; &amp;quot;) %&amp;gt;% purrr::transpose())[[2]] %&amp;gt;% unlist() %&amp;gt;% as.numeric()) %&amp;gt;% dplyr::select(NAME, ADRESSE, WEITERE_INF, THUMBNAIL, X, Y) %&amp;gt;% leaflet::leaflet() %&amp;gt;% leaflet::addTiles() %&amp;gt;% leaflet::addMarkers(~X,~Y, label = ~paste0(NAME,&amp;quot;&amp;lt;br/&amp;gt;&amp;quot;, ADRESSE),popup = ~paste0(NAME,&amp;quot;&amp;lt;br/&amp;gt;&amp;quot;, ADRESSE, &amp;quot;&amp;lt;br/&amp;gt;&amp;quot;, WEITERE_INF),icon = ~leaflet::icons(iconUrl = THUMBNAIL)){&#34;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
   </channel>
