@@ -5,7 +5,19 @@
     <link>/</link>
     <description>Recent content on Data Scie&#39;n&#39;Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vienna-to-visit</title>
+      <link>/2020/11/13/sighs-vienna/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/11/13/sighs-vienna/</guid>
+      <description>A little Vis of all sights so visit in vienna.
+The data comes from publicly available data, found on: https://data.wien.gv.at.
+library(magrittr)read.csv(&amp;quot;https://data.wien.gv.at/daten/geo?service=WFS&amp;amp;request=GetFeature&amp;amp;version=1.1.0&amp;amp;typeName=ogdwien:SEHENSWUERDIGOGD&amp;amp;srsName=EPSG:4326&amp;amp;outputFormat=csv&amp;quot;) %&amp;gt;% dplyr::mutate(COORDS = stringr::str_remove(SHAPE, &amp;quot;POINT &amp;quot;),COORDS = stringr::str_remove(COORDS, &amp;quot;\\(&amp;quot;),COORDS = stringr::str_remove(COORDS, &amp;quot;\\)&amp;quot;),X = (stringr::str_split(COORDS, &amp;quot; &amp;quot;) %&amp;gt;% purrr::transpose())[[1]] %&amp;gt;% unlist() %&amp;gt;% as.numeric(),Y = (stringr::str_split(COORDS, &amp;quot; &amp;quot;) %&amp;gt;% purrr::transpose())[[2]] %&amp;gt;% unlist() %&amp;gt;% as.numeric()) %&amp;gt;% dplyr::select(NAME, ADRESSE, WEITERE_INF, THUMBNAIL, X, Y) %&amp;gt;% leaflet::leaflet() %&amp;gt;% leaflet::addTiles() %&amp;gt;% leaflet::addMarkers(~X,~Y, label = ~paste0(NAME),popup = ~paste0( &amp;quot;&amp;lt;a href=&amp;#39;&amp;quot;,WEITERE_INF,&amp;quot;&amp;#39;&amp;gt;&amp;quot;,NAME,&amp;quot;&amp;lt;/a&amp;gt;&amp;quot;, &amp;quot;&amp;lt;br/&amp;gt;&amp;quot;,ADRESSE),icon = ~leaflet::icons(iconUrl = THUMBNAIL)){&#34;</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>/about/</link>
