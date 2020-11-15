@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Scie&#39;n&#39;Stuff</title>
-    <link>/</link>
-    <description>Recent content on Data Scie&#39;n&#39;Stuff</description>
+    <title>things-todo-past-corona on Data Scie&#39;n&#39;Stuff</title>
+    <link>/categories/things-todo-past-corona/</link>
+    <description>Recent content in things-todo-past-corona on Data Scie&#39;n&#39;Stuff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/categories/things-todo-past-corona/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Visit-to-Vienna</title>
       <link>/2020/11/13/a-little-vis-of-all-sights-so-visit-in-vienna/</link>
@@ -15,15 +15,6 @@
       <guid>/2020/11/13/a-little-vis-of-all-sights-so-visit-in-vienna/</guid>
       <description>Do some VDA with sights of Vienna, Austria.So what should I visit when staying in Vienna?
 I heard this question quite often when friends were visiting from different countries.My Answer was always, if you are only one or two days in Vienna, just talk a long walk inthe city center and enjoy the flare of the city, since the most pretty buildings are around thecity center and mostly in walking distance.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
   </channel>

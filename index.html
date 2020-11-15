@@ -134,20 +134,19 @@
       
       <div class="post-list__item">
         <span class="item__title--big">
-          <a href="/2020/11/13/sighs-vienna/" >vienna-to-visit</a>
+          <a href="/2020/11/13/a-little-vis-of-all-sights-so-visit-in-vienna/" >Visit-to-Vienna</a>
         </span>
         <span class="item__date">
           Nov 13, 2020
         </span>
         <span >
         
-        A little Vis of all sights so visit in vienna.
-The data comes from publicly available data, found on: https://data.wien.gv.at.
-library(magrittr)read.csv(&quot;https://data.wien.gv.at/daten/geo?service=WFS&amp;request=GetFeature&amp;version=1.1.0&amp;typeName=ogdwien:SEHENSWUERDIGOGD&amp;srsName=EPSG:4326&amp;outputFormat=csv&quot;) %&gt;% dplyr::mutate(COORDS = stringr::str_remove(SHAPE, &quot;POINT &quot;),COORDS = stringr::str_remove(COORDS, &quot;\\(&quot;),COORDS = stringr::str_remove(COORDS, &quot;\\)&quot;),X = (stringr::str_split(COORDS, &quot; &quot;) %&gt;% purrr::transpose())[[1]] %&gt;% unlist() %&gt;% as.numeric(),Y = (stringr::str_split(COORDS, &quot; &quot;) %&gt;% purrr::transpose())[[2]] %&gt;% unlist() %&gt;% as.numeric()) %&gt;% dplyr::select(NAME, ADRESSE, WEITERE_INF, THUMBNAIL, X, Y) %&gt;% leaflet::leaflet(width = &quot;100%&quot;) %&gt;% leaflet::addProviderTiles(leaflet::providers$BasemapAT.
+        Do some VDA with sights of Vienna, Austria.So what should I visit when staying in Vienna?
+I heard this question quite often when friends were visiting from different countries.My Answer was always, if you are only one or two days in Vienna, just talk a long walk inthe city center and enjoy the flare of the city, since the most pretty buildings are around thecity center and mostly in walking distance.
         
         </span>
         
-          ... <a class="read-more-symbol" href="/2020/11/13/sighs-vienna/">➦</a>
+          ... <a class="read-more-symbol" href="/2020/11/13/a-little-vis-of-all-sights-so-visit-in-vienna/">➦</a>
         
         </div>
         

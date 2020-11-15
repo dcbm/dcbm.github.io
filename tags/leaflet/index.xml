@@ -8,14 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/leaflet/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>vienna-to-visit</title>
-      <link>/2020/11/13/sighs-vienna/</link>
+      <title>Visit-to-Vienna</title>
+      <link>/2020/11/13/a-little-vis-of-all-sights-so-visit-in-vienna/</link>
       <pubDate>Fri, 13 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/11/13/sighs-vienna/</guid>
-      <description>A little Vis of all sights so visit in vienna.
-The data comes from publicly available data, found on: https://data.wien.gv.at.
-library(magrittr)read.csv(&amp;quot;https://data.wien.gv.at/daten/geo?service=WFS&amp;amp;request=GetFeature&amp;amp;version=1.1.0&amp;amp;typeName=ogdwien:SEHENSWUERDIGOGD&amp;amp;srsName=EPSG:4326&amp;amp;outputFormat=csv&amp;quot;) %&amp;gt;% dplyr::mutate(COORDS = stringr::str_remove(SHAPE, &amp;quot;POINT &amp;quot;),COORDS = stringr::str_remove(COORDS, &amp;quot;\\(&amp;quot;),COORDS = stringr::str_remove(COORDS, &amp;quot;\\)&amp;quot;),X = (stringr::str_split(COORDS, &amp;quot; &amp;quot;) %&amp;gt;% purrr::transpose())[[1]] %&amp;gt;% unlist() %&amp;gt;% as.numeric(),Y = (stringr::str_split(COORDS, &amp;quot; &amp;quot;) %&amp;gt;% purrr::transpose())[[2]] %&amp;gt;% unlist() %&amp;gt;% as.numeric()) %&amp;gt;% dplyr::select(NAME, ADRESSE, WEITERE_INF, THUMBNAIL, X, Y) %&amp;gt;% leaflet::leaflet(width = &amp;quot;100%&amp;quot;) %&amp;gt;% leaflet::addProviderTiles(leaflet::providers$BasemapAT.</description>
+      <guid>/2020/11/13/a-little-vis-of-all-sights-so-visit-in-vienna/</guid>
+      <description>Do some VDA with sights of Vienna, Austria.So what should I visit when staying in Vienna?
+I heard this question quite often when friends were visiting from different countries.My Answer was always, if you are only one or two days in Vienna, just talk a long walk inthe city center and enjoy the flare of the city, since the most pretty buildings are around thecity center and mostly in walking distance.</description>
     </item>
     
   </channel>
